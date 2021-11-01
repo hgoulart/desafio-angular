@@ -1,0 +1,53 @@
+<!-- <nav class="side-menu"  [class.isOpen]="isOpen">    -->
+<nav class="side-menu">    
+    <ul class="side-menu-list">
+        <li class="side-menu-item" >
+            <a class="side-menu-link"href="#">
+                <img src="assets/images/logo.png" class="menu-logo" alt="logo">    
+            </a>
+        </li>
+        <li class="side-menu-item" (click)="openMenu()">
+            <a class="side-menu-link"href="#">
+                <fa-icon [icon]="faBars"></fa-icon>
+            </a>
+        </li>
+        <li class="side-menu-item">
+            <a class="side-menu-link"href="#">
+                <fa-icon [icon]="faSearch"></fa-icon>
+            </a>
+        </li>
+        <li class="side-menu-item">
+            <a class="side-menu-link"href="#">
+                <fa-icon [icon]="faHome"></fa-icon>
+                <label>Tela Inicial</label>
+            </a>
+        </li>
+        <li class="side-menu-item">
+            <a class="side-menu-link"href="#">
+                <fa-icon [icon]="faStar"></fa-icon>
+                <label>Favoritos</label>
+            </a>
+        </li>
+        <li class="side-menu-item">
+            <a class="side-menu-link"href="#">
+                <fa-icon [icon]="faCommentAlt" class="fa-regular" ></fa-icon>
+                <label>Atendimento</label>
+            </a>
+        </li>
+        <li class="side-menu-item">
+            <a class="side-menu-link" href="#">
+                <div class="slider-icon">
+                    <fa-icon [icon]="faSlidersH"></fa-icon>
+                </div>
+                <label>Cadastro</label>
+            </a>
+        </li>
+        <li class="side-menu-item">
+            <a class="side-menu-link"href="#">
+                <fa-icon [icon]="faLandmark"></fa-icon>
+                <label>Demais Telas / rotinas</label>
+            </a>
+        </li>
+    </ul>
+</nav>
+

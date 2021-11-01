@@ -1,0 +1,26 @@
+<h3>Informe o CPF do futuro cooperado (a)</h3>
+
+<p>
+    Se necessário, você poderá duplicar uma conta existente ou pausar e retornar este cadastro futuramente.
+    <br>
+    Digite apenas os números (sem pontos ou traços).
+</p>
+
+<div class="form-container">
+    <form>
+        <div class="form-content">
+            <div class="inputs">
+                <label>CPF</label>
+                <input type="text" name="cpf" (ngModelChange)="cpfValidate($event)" placeholder="000.000.000-00" [ngModel]="cpfValue | cpf : true" (ngModelChange)="cpfValue=$event">
+                <div class="error" *ngIf="!validCpf && cpfValue.length > 0" >
+                    <span>Insira um CPF válido!</span>
+                </div>
+            </div>
+
+            <div>
+                <button class="btn-search" (click)="onSubmit()" [disabled]="!validCpf">Consultar por CPF</button>
+            </div>
+        </div>
+    </form>
+</div>
+

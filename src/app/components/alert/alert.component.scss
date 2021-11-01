@@ -1,0 +1,64 @@
+@import "../../../variables.scss";
+
+.alert{
+    cursor: pointer;
+    position:absolute;
+    z-index: 9999;
+    right: -500px;
+    top: 5px;
+    width: 400px;
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid $primary-color;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+    .situation-card{
+        display: flex;
+        .rounded-icon-key{
+            border: 1px solid $primary-color;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            margin-right: 15px;
+            background-color: $ailos-scale-grey-2-color;
+            .ng-fa-icon{
+                color: $primary-color;
+                padding: 5px;
+                font-size: 25px;
+            }
+        }
+        .situation-sub-title{
+            h4{
+                margin: 0;
+                font-style: bold;
+                font-weight: 700;
+                font-size: 14px;
+                color: $ailos-scale-black-color;
+            }
+            label{
+                color: $ailos-scale-black-color;
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+        
+    }
+    .close-icon{
+        .ng-fa-icon{
+            color: $primary-color;
+            padding: 5px;
+            font-size: 12px;
+            font-weight: 400;
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            color: #165c7d;
+        }
+    }
+}
+
+.alert.isOpen{
+    right: 0;
+}

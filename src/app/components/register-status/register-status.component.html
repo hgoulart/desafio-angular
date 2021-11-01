@@ -1,0 +1,38 @@
+<div class="register-timeline">
+    <ul class="timeline-list">
+        <li>
+            <div class="timeline-ui">
+                <span class="timeline-circle active-circle"></span>
+                <span class="timeline-dash" [class.active-dash]="step > 1"></span>
+                <span class="timeline-title title-first title-active">Início</span>
+            </div>
+            
+        </li>
+        <li>
+            <div class="timeline-ui">
+                <span class="timeline-circle" [class.active-circle]="step > 1"></span>
+                <span class="timeline-dash "></span>
+                <span class="timeline-title title-second">Documentos</span>
+            </div>
+
+
+        </li>
+        <li>
+            <div class="timeline-ui">
+                <span class="timeline-circle"></span>
+                <span class="timeline-dash"></span>
+                <span class="timeline-title title-third">Dados Cadastrais</span>
+            </div>
+
+
+        </li>
+        <li>
+            <div class="timeline-ui">
+                <span class="timeline-circle"></span>
+                <span class="timeline-title title-fourth">Admissão</span>
+            </div>
+            
+
+        </li>
+    </ul>
+</div>

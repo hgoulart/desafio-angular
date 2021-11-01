@@ -1,0 +1,16 @@
+@import "../../../variables.scss";
+
+.register-action{
+    background-color: $btn-text-color;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 15px;
+    width: calc(100% - 30px);
+}
+.btn-rounded{
+    margin-left:15px;
+}
+.inner-content{
+    overflow: hidden;
+}

@@ -1,0 +1,34 @@
+<div class="register-situation" [class.isOpen]="userData">
+    <div class="situation-content">
+        <h3 class="situation-title"><strong>Situação cadastral do CPF</strong></h3>
+        <label class="situation-sub-title">Consulta na Receita Federal</label>
+        <div class="situation-card">
+            <fa-icon [icon]="faUser"></fa-icon>
+            <div class="situation-sub-title">
+                <label>Nome</label>
+                <h4>{{userData.nome}}</h4>
+            </div>
+            
+        </div>
+        <div class="situation-card check-circle">
+            <fa-icon [icon]="faCheckCircle"></fa-icon>
+            <div class="situation-sub-title">
+                <label>Nome</label>
+                <h4>{{userData.situacaoCPF[0].status}}</h4>
+            </div>
+        </div>
+    </div>
+    <div class="situation-content" *ngFor="let user of userData.contas">
+        <h3 class="situation-title"><strong>{{user.tipo[0].tipo}}</strong></h3>
+        <label class="situation-sub-title">Cooperativa Viacredi</label>
+        <div class="situation-card">
+            <fa-icon [icon]="faCreditCard"></fa-icon>
+            <div class="situation-sub-title">
+                <label>Número da conta</label>
+                <h4>{{user.contaNumero}}</h4>
+            </div>
+        </div>
+        <button class="btn-account">Duplicar conta</button>
+    </div>
+
+</div>

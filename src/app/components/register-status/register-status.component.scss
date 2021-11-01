@@ -1,0 +1,87 @@
+@import "../../../variables.scss";
+
+.register-timeline{
+    font-family: 'Open Sans', sans-serif;
+    color:  $ailos-scale-grey-3-color ;
+    font-weight: 400;
+    padding: 25px 15px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    ul.timeline-list{
+        display: flex;
+        li{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            div.timeline-ui{
+                position: relative;
+                display: flex;
+                align-items: center;
+                span.timeline-circle{
+                    border: 1px solid $ailos-scale-grey-2-color;
+                    border-radius: 50%;
+                    width: 18px;
+                    height: 18px;
+                    display: block;
+                    background-color: $ailos-scale-grey-2-color;
+                    transition: all 0.5s ease-in-out;
+                }
+                span.timeline-dash{
+                    display: block;
+                    width: 140px;
+                    height: 2px;
+                    background-color: $ailos-scale-grey-2-color;
+                    transition: all 0.5s ease-in-out;
+                }
+                span.timeline-dash.active-dash{
+                    background-color: $primary-color;
+                }
+                span.timeline-circle.active-circle{
+                    border: 2px solid $primary-color;
+                    background-color: transparent;
+                }
+                span.timeline-title.title-first{
+                    left: -6px
+                }
+                span.timeline-title.title-second{
+                    left: -33px
+                }
+                span.timeline-title.title-third{
+                    left: -50px
+                }
+                span.timeline-title.title-fourth{
+                    left: -22px
+                }
+                span.timeline-title{
+                    display: block;
+                    position: absolute;
+                    top: 35px;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                span.timeline-title.title-active{
+                    color: $primary-color;
+                }
+            }
+
+
+        }
+    }
+    ul.timeline-title{
+        display: flex;
+        width: 550px;
+        li{
+            display: block;
+        }
+    }
+}

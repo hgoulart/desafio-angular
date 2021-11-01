@@ -1,0 +1,13 @@
+
+<app-alert   [alertData]="isOpen"></app-alert>
+
+<app-register-status [step]="step"></app-register-status>
+
+<app-register-search (sendCpf)="searchCPF($event)"></app-register-search>
+
+<app-register-situation *ngIf="step == 1" [userData]="user"></app-register-situation>
+
+<app-register-documents *ngIf="step == 2" [userData]="user"></app-register-documents>
+
+
+

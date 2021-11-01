@@ -1,0 +1,17 @@
+<div class="alert" [class.isOpen]="alertData.isOpen"  (click)="alertClose()">
+    <div class="close-icon">
+        <fa-icon [icon]="faTimes"></fa-icon>
+    </div>
+    <div class="alert-content">
+      <div class="situation-card">
+        <div class="rounded-icon-key">
+        <fa-icon [icon]="faKey"></fa-icon>
+        </div>
+        
+        <div class="situation-sub-title">
+            <h4>{{alertData.title}}</h4>
+            <label>{{alertData.subtitle}}</label>
+        </div>
+    </div>
+    </div>
+  </div>

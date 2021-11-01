@@ -1,0 +1,103 @@
+@import "../../../variables.scss";
+.header{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header-config{
+        cursor: pointer;
+        display: flex;
+        padding: 0px;
+        align-items: center;
+        .icon-bell-container{
+            margin-right: 15px;
+            position: relative;
+            .icon-bell-alert{
+                position: absolute;
+                top: 6px;
+                right: -3px;
+                background-color: red;
+                width: 16px;
+                height: 16px;
+                font-size: 10px;
+                font-weight: 700;
+                border-radius: 50%;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .ng-fa-icon{
+                color: $primary-color;
+                font-size: 30px;
+            }
+        }
+        picture{
+            position: relative;
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+            .icon-settings{
+                position: absolute;
+                right: -5px;
+                bottom: -7px;
+                color: $primary-color;
+            }
+            .logo-user{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+
+                border: 1px solid $primary-color;
+            }
+        }
+
+        .bt-header{
+            background-color: transparent;
+            color:  $primary-color;
+            padding: 5px 15px;
+            border-radius: 25px;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 14px;
+            border: 1px solid $primary-color;
+            text-decoration: none;
+            letter-spacing: 0;
+            line-height: 18.75px;
+            transition: all 0.3s ease-in-out;
+            margin-right: 15px;
+        }
+        .bt-header:hover{
+            color:  white;
+            border: 1px solid white;
+            background-color:  $primary-color;
+        }
+    }
+}
+h2{
+    margin: 0;
+    text-transform: uppercase ;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 24px;
+}
+.bread-crumb-list{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 12px;
+    color: $ailos-scale-grey-4-color;
+    .bread-crumb-item{
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        .bread-crumb-divider{
+            margin: 0 5px
+        }
+    }
+}

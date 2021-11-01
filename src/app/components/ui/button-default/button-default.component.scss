@@ -1,0 +1,29 @@
+@import "../../../../variables.scss";
+
+
+
+// .btn-default:hover{
+//     background-color: #012F44;
+// }
+
+.btn-default{
+    background-color: $primary-color;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 25px !important;
+    color: $btn-text-color;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    border: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    line-height: 18.75px;
+    transition: all 0.3s ease-in-out;
+    
+}
+.btn-default:hover{
+    background-color: #012F44;
+}
+

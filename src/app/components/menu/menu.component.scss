@@ -1,0 +1,63 @@
+@import "../../../variables.scss";
+.menu-logo{
+    width: 60px;
+}
+.side-menu{
+    font-family: 'Open Sans', sans-serif;
+    z-index: 99;
+    transition: all 0.5s ease-in-out;
+    .side-menu-list{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .side-menu-item{
+            cursor: pointer;
+            margin: 15px 0;
+            .side-menu-link{
+                cursor: pointer;
+                display: block;
+                color: $menu-icon;
+                text-decoration: none;
+                .ng-fa-icon{
+                    color: $menu-icon;
+                    font-size: 25px;
+                }
+                .slider-icon{
+                    border: 1px solid white;
+                    padding: 3px 3px 0px 3px;
+                    border-radius: 3px;
+                    display: inline-block;
+                    .ng-fa-icon{
+                        color: $menu-icon;
+                        font-size: 20px;
+                    }
+                }
+                label{
+                    display: none;
+                }
+            }
+        }
+    }
+}   
+
+// .side-menu.isOpen{
+//     .side-menu-list{
+//         align-items: flex-start !important;
+//         padding-left: 15px;
+//         .side-menu-item{
+//             .side-menu-link{
+//                 .menu-logo{
+//                     width: 150px;
+//                 }
+//                 label{
+//                     cursor: pointer;
+//                     margin-left: 25px;
+//                     display: inline-block;
+//                 }
+//             }
+//         }
+//     }
+// }

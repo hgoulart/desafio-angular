@@ -1,0 +1,15 @@
+
+<section class="main">
+  <section class="main-header">
+    <app-header></app-header>
+  </section>
+  <section class="main-menu">
+    <app-menu  (isMenuOpen)="openMenu($event)"></app-menu>
+  </section>
+  <section class="main-content">
+    <router-outlet></router-outlet>
+  </section>
+
+</section>
+
+

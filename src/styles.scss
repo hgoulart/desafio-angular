@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./variables.scss";
+html,body{
+    padding: 0;
+    margin: 0;
+
+}
+.error{
+    position: absolute;
+    color: red;
+    padding: 5px 0;
+}
+
+
+app-alert{
+    float: right;
+    position: relative;
+}
+

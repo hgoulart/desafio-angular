@@ -1,0 +1,23 @@
+@import "../../../../variables.scss";
+
+.btn-rounded:hover{
+    background-color: rgba(2,61,85,0.1);
+    border: 1px solid #023D55;
+    border-radius: 2px;
+}
+.btn-rounded{
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid $primary-color;
+    background-color: $btn-text-color;
+    color: $primary-color;
+    padding: 15px 25px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 0;
+    line-height: 18.75px;
+    transition: all 0.3s ease-in-out;
+}
