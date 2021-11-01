@@ -18,7 +18,7 @@
             </div>
 
             <div>
-                <button class="btn-search" (click)="onSubmit()" [disabled]="!validCpf">Consultar por CPF</button>
+                <button class="btn-search" (click)="onSubmit()" [class.btn-disabled]="!validCpf" [disabled]="!validCpf">Consultar por CPF</button>
             </div>
         </div>
     </form>

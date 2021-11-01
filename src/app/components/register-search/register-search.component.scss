@@ -42,6 +42,9 @@ p{
                 transition: all 0.3s ease-in-out;
                 
             }
+            .btn-disabled.btn-search{
+                background-color: #A2BECB;
+            }
             .btn-default:hover{
                 background-color: #012F44;
             }
